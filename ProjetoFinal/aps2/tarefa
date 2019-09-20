@@ -1,10 +1,10 @@
- #!/usr/bin/env python3
+#!/usr/bin/env python3
  
 import argparse
 import requests
 import json
 
-parser = argparse.ArgumentParser(description='Manipulador de Tarefas - APS2')
+parser = argparse.ArgumentParser(description="Manipulador de Tarefas - APS2")
 
 parser.add_argument('acao', action = 'store', choices=['adicionar', 'listar', 'buscar', 'apagar', 'atualizar'],
 					help = 'Acao desejada para as Tarefas')
@@ -72,10 +72,3 @@ arguments = parser.parse_args()
 
 selector()
 
-
-
-
-
-print(arguments.acao)
-print(arguments.nome)
-print(arguments.nivel)

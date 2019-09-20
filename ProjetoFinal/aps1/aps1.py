@@ -23,7 +23,6 @@ tarefas_dict = {
 
 }
 
-print(json.dumps(tarefas_dict[2].__dict__))
 
 def addToDict(tarefa):
 	key = 0
@@ -94,7 +93,6 @@ class TarefaAPI(Resource):
 		tarefa = tarefas_dict[tarefa_id]
 		args = self.reqparse.parse_args()
 		for k, v in args.items():
-			print(k)
 			if v is not None:
 				tarefas_dict[tarefa_id].k = v
 		response_dict = DictOFObjectsToJSON(tarefas_dict)
