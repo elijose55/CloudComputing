@@ -118,7 +118,7 @@ api.add_resource(TarefaAPI, '/Tarefa/<int:tarefa_id>', endpoint='task')
 api.add_resource(HealthCheck, '/healthcheck', endpoint='healthcheck')
 
 if __name__ == '__main__':
-	app.run(debug=True)
+	app.run(debug=True, host='0.0.0.0')
 
 #tarefa = tarefas_dict[key]
 #thisdict["color"] = "red"
